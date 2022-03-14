@@ -15,5 +15,22 @@
     "preview": {},
     "last_modified": "2022-03-13T22:57:33-03:00",
     "input_file": {}
+  },
+  {
+    "path": "posts/2022-03-13-anlise-de-dados-da-base-rais/",
+    "title": "Análise da base RAIS",
+    "description": "Essa análise tem como objetivo analisar os salários na base da RAIS. Esse projeto foi feito na semana Data Science na Prática da Curso-R.",
+    "author": [
+      {
+        "name": "Bruno Anderson Possamai",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2022-03-13",
+    "categories": [],
+    "contents": "\r\nEsse é o primeiro projeto no portfólio.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-03-13T23:09:02-03:00",
+    "input_file": "anlise-de-dados-da-base-rais.knit.md"
   }
 ]

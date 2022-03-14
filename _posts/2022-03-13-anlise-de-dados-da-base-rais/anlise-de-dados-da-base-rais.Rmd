@@ -1,0 +1,21 @@
+---
+title: "Análise da base RAIS"
+description: |
+  Essa análise tem como objetivo analisar os salários na base da RAIS. Esse projeto foi feito na semana Data Science na Prática da Curso-R.
+author:
+  - name: Bruno Anderson Possamai
+    url: https://example.com/norajones
+date: 2022-03-13
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Esse é o primeiro projeto no portfólio.
+
+
