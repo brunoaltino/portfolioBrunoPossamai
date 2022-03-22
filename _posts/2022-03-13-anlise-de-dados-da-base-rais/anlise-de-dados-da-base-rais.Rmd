@@ -46,6 +46,6 @@ conexao <- dbConnect(
 
 primeiras_cinco_linhas = collect(head(select(tbl(conexao, "microdados_vinculos"), everything()), 5))
 
-knit::kable(primeiras_cinco_linhas)
+knitr::kable(primeiras_cinco_linhas)
   
 ```
