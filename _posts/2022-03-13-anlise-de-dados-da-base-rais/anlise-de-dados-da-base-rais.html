@@ -1482,8 +1482,33 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
-<p>Esse é o primeiro projeto no portfólio.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Nesse relatório estamos interessados em responder a seguinte pergunta:</p>
+<p>“Quanto ganha um cientista de dados?”</p>
+<p>Para isso vamos utilizar a base da RAIS anonimizada.</p>
+<h1 id="acessando-os-dados-da-rais">Acessando os dados da RAIS</h1>
+<p>Vamos utilizar <a href="https://basedosdados.org/">o data lake da iniciativa Base dos Dados</a>.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<p>Abaixo está o bloco de código que carrega as primeiras 5 linhas da tabela de microdados.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code># A tibble: 5 x 66
+    ano sigla_uf id_municipio tipo_vinculo vinculo_ativo_3112
+  &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;        &lt;chr&gt;                     &lt;int&gt;
+1  1985 AC       1200054      1                             1
+2  1985 AC       1200054      1                             1
+3  1985 AC       1200054      1                             1
+4  1985 AC       1200054      1                             1
+5  1985 AC       1200054      1                             1
+# ... with 61 more variables: tipo_admissao &lt;chr&gt;,
+#   mes_admissao &lt;int&gt;, mes_desligamento &lt;int&gt;,
+#   motivo_desligamento &lt;chr&gt;, causa_desligamento_1 &lt;chr&gt;,
+#   causa_desligamento_2 &lt;chr&gt;, causa_desligamento_3 &lt;chr&gt;,
+#   faixa_tempo_emprego &lt;chr&gt;, tempo_emprego &lt;dbl&gt;,
+#   faixa_horas_contratadas &lt;chr&gt;,
+#   quantidade_horas_contratadas &lt;int&gt;, ...</code></pre>
+</div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

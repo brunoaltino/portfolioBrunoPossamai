@@ -11,11 +11,39 @@ output:
     self_contained: false
 ---
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Esse é o primeiro projeto no portfólio.
+Nesse relatório estamos interessados em responder a seguinte pergunta:
 
+"Quanto ganha um cientista de dados?"
 
+Para isso vamos utilizar a base da RAIS anonimizada.
+
+# Acessando os dados da RAIS
+
+Vamos utilizar [o data lake da iniciativa Base dos Dados](https://basedosdados.org/).
+
+```{r message=FALSE, warning=FALSE}
+library(bigrquery)
+library(dplyr)
+
+```
+
+Abaixo está o bloco de código que carrega as primeiras 5 linhas da tabela de microdados.
+
+```{r}
+# Acessando o banco de dados.
+conexao <- dbConnect(
+  bigquery(),
+  project = "basedosdados",
+  dataset = "br_me_rais",
+  billing = "meu-portfolio-344102",
+)
+
+primeiras_cinco_linhas = collect(head(select(tbl(conexao, "microdados_vinculos"), everything()), 5))
+
+primeiras_cinco_linhas
+  
+```
