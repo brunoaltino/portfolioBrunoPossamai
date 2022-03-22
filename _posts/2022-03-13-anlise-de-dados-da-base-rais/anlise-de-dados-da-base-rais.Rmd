@@ -1,5 +1,5 @@
 ---
-title: "Análise da base RAIS"
+title: "Análise de Dados - RAIS"
 description: |
   Essa análise tem como objetivo analisar os salários na base da RAIS. Esse projeto foi feito na semana Data Science na Prática da Curso-R.
 author:
@@ -35,6 +35,8 @@ Abaixo está o bloco de código que carrega as primeiras 5 linhas da tabela de m
 
 ```{r}
 # Acessando o banco de dados.
+bigrquery::bq_auth("bruno.possamai16@gmail.com")
+
 conexao <- dbConnect(
   bigquery(),
   project = "basedosdados",
@@ -44,6 +46,6 @@ conexao <- dbConnect(
 
 primeiras_cinco_linhas = collect(head(select(tbl(conexao, "microdados_vinculos"), everything()), 5))
 
-primeiras_cinco_linhas
+knit::kable(primeiras_cinco_linhas)
   
 ```
